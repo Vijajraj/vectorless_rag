@@ -1,0 +1,19 @@
+# Vectorless RAG — PyMuPDF + Ollama/Mistral 7B
+# Fully local. No cloud API, no vector DB, no embeddings.
+
+# PyMuPDF: extracts PDF outline (TOC) and page text locally
+pymupdf>=1.23.0
+
+# OpenAI-compatible SDK pointed at Ollama's local endpoint
+openai>=1.14.0
+
+# Config: load .env into environment variables
+python-dotenv>=1.0.0
+
+# Web server (FastAPI + Uvicorn)
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9    # required for FastAPI file uploads
+
+# Nice CLI progress/spinner
+tqdm>=4.66.0
